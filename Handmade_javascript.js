@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="handmade_styles.css">
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
