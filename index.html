@@ -81,7 +81,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
         <button class="accordion">Cornell Cup Robotics (August 2018 - Now)</button>
         <div class="panel">
-        <p>Worked with Minibots!</p>
+        <p>Member of the Electrical and computer engineering team on Cornell Cup Robotics. We have been developing a child friendly robotics platform using Raspberry Pis and have been  </p>
         </div>
         <button class="accordion">First Tech Challenge Lansing Robotics (2015-2018)</button>
         <!--Match 8 48 min remaining facebook.com?CPPSchools/videos/10154914492071432
@@ -94,13 +94,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="panel">
         <p>made Dustin</p>
         </div>
-        <button class="accordion">Intro CS with Python Consultant (2019-Now)</button>
+        <button class="accordionbot">Intro CS with Python Consultant (2019-Now)</button>
         <div class="panel">
         <p>Hired to be a consultant for CS 1110 Introduction to Computing Using Python. This job includes helping students during Lab section, running one on one consulting hours and grading students projects/exams.</p>
         </div>
         <br>
         <script>
-          var acc = document.getElementsByClassName("accordion");
+          var acc = document.getElementsByClassName("accordion","accordionbot");
           var i;
 
           for (i = 0; i < acc.length; i++) {
@@ -121,16 +121,36 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         /* Style the buttons that are used to open and close the accordion panel */
         .accordion {
         background-color: #eee;
-        color: #444;
+        color: #555;
         cursor: pointer;
         padding: 18px;
         width: 100%;
         text-align: left;
-        font-size: 30px;
-        border: 1.5px solid #008080;
+        font-size: 22px;
+        border-top: 1.5px solid #008080;
+        border-right:1.5px solid #008080;
+        border-left:1.5px solid #008080;
+        border-bottom:none;
         border-radius:5px ;
         outline: none;
         transition: 0.4s;
+        }
+        .accordionbot {
+        background-color: #eee;
+        color: #555;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        font-size: 22px;
+        border-top: 1.5px solid #008080;
+        border-right:1.5px solid #008080;
+        border-left:1.5px solid #008080;
+        border-bottom:1.5px solid #008080;
+        border-radius:5px ;
+        outline: none;
+        transition: 0.4s;
+
         }
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
