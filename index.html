@@ -108,11 +108,24 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
         <br>
         <script>
-          var acc = document.getElementsByClassName("accordion","accordionbot");
+          var acc = document.getElementsByClassName("accordion");
+          var acc2= document.getElementsByClassName("accordionbot");
           var i;
 
           for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              } 
+            });
+          }
+          var j;
+          for (j = 0; j < acc.length; j++) {
+            acc[j].addEventListener("click", function() {
               this.classList.toggle("active");
               var panel = this.nextElementSibling;
               if (panel.style.maxHeight){
@@ -199,7 +212,27 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Project Portfolio</h2>
 
-        
+        <button class="accordion">Control Award for Autonomous Design 2018</button>
+        <div class="panel">
+        <p>
+
+        </p>
+        </div>
+        <button class="accordion">Kionix: Applications Engineering Internship (Summer 2019)</button>
+        <div class="panel">
+        <p>
+        </p>
+        </div>
+        <button class="accordion">Kionix: Applications Engineering Internship (Summer 2019)</button>
+        <div class="panel">
+        <p>
+        </p>
+        </div>
+        <button class="accordion">Kionix: Applications Engineering Internship (Summer 2019)</button>
+        <div class="panel">
+        <p>
+        </p>
+        </div>
         <!--
         <div class="w3-container">
           <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
