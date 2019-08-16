@@ -100,7 +100,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
         <br>
         <script>
-          var acc = document.getElementsByClassName("accordion","accordionbot");
+          var acc = document.getElementsByClassName("accordion");
+          acc.push(document.getElementsByClassName("accordionbot"));
           var i;
 
           for (i = 0; i < acc.length; i++) {
@@ -126,12 +127,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         padding: 18px;
         width: 100%;
         text-align: left;
-        font-size: 22px;/*
+        font-size: 22px;
         border-top: 1px solid #008080;
         border-right:1px solid #008080;
         border-left:1px solid #008080;
         border-bottom:none;
-        */
+        
         border-radius:5px ;
         outline: none;
         transition: 0.4s;
@@ -143,11 +144,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         padding: 18px;
         width: 100%;
         text-align: left;
-        font-size: 22px;/*
+        font-size: 22px;
         border-top: 1px solid #008080;
         border-right:1px solid #008080;
         border-left:1px solid #008080;
-        border-bottom:1px solid #008080;*/
+        border-bottom:1px solid #008080;
         border-radius:5px ;
         outline: none;
         transition: 0.4s;
