@@ -206,6 +206,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="panel">
         <p>
         I worked on writing software for a demo that Kionix now takes to many sensor expos to promote their project. We put a sensor on slot cars and took the data from the Kionix accelerometer (measures acceleration) and magnetomenter (measure magnetic flux) processed the data and displayed it on a user interface in order to create many real world applications of the Kionix sensors to show how functional and versatile they are. Some of the algorithms I worked on include but are not limited to the terrain detection algorithm and driver profiling. 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nfsGEDX1w4k?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
         <p>
         <b>Terrain Detection:</b> The idea was to have the car drive over some sort of 'rough' terrain to show the Kionix sensor can be used for vibration analysis in the high frequency domain. I used paper clips to emulate rough terrain. At first I thought this analysis would be simple, but because the sensor is so sensitive to changes in acceleration It was very difficult to see distinct changes in the acceleration patterns that could be hard coded without giving false positives. So I came up with al algorithm that fed in the most recent .5 seconds of data, and then calculated the average. After this the algorithm calculated how many distinct positive and negative peaks there were in all three axis of acceleration. I compared the data of how many peaks there were in the three axis just driving the car around and while driving it over paper clips to then deterime thresholds for number of peaks there should be to conider the terrain 'rough'. After refinement the algorithm had what seemed to be a 100% succsess rate. 
@@ -253,7 +254,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           During senior year in my engineering class, me and two others decided to work on a self-driving car project, and our goal was to build a car that could autonomously navigate the school. 
           <iframe width="560" height="315" src="https://www.youtube.com/embed/hnty9TLKosw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           We managed to build a robot using Arduinos platform, motors with motor control and an ultrasonic sensor with infrared sensors. The program told the robot to navigate randomly unless it sensed surroundings. It had infrared sensors at the bottom to ensure it did not drive off stairs, but backed up and truned. It also had a scannning ultrasonic sensor that scanned to check how far the walls were around the robot so it could decide which way to drive.
-        <img ALIGN="bottom" HSPACE="10" VSPACE="5"  src="Self_Driving_Car.png" style = "width:62%">
+        <img ALIGN="bottom" HSPACE="10" VSPACE="5"  src="Self_Driving_Car.png" style = "width:35%">
 
         </p>
         </div>
