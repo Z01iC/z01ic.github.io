@@ -190,14 +190,32 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <button class="accordion">Cornell Cup Lasertag</button>
         <div class="panel">
         <p>
+          Me and a teamate developed a game of lasertag from scratch. We worked to explore the teams minibot platform (explained in previous tab) and expand on it by integrating infrared sensors/emitters sound mechanisms and creating a project that would be a fun, educational and do-able for young adults. 
+          <img ALIGN="bottom" HSPACE="10" VSPACE="5"  src="laserTagcirc.png" style = "width:75%">
+        </p>
+        <p>
+          I worked to design the circuitry using rasberry pi and soldered together protoboards with raspberry pi's to create a fully functioning lasertag system, including a trigger, infrared emitter, an array of detectors on the gun and in the vest, audio feedback, a reset button and LED lights indicating how many lives the player has. 
+          <img ALIGN="bottom" HSPACE="10" VSPACE="5"  src="LaserTag.png" style = "width:75%">
+        </p>
+        <p>
+          I also helped work with the software of the game. I wrote code that interacted with the hardware at a pretty low level getting voltage inputs from sensory information and outputting specific frequencies and voltages to make the system run. We did this using object oriented code that used multi-threading in order to run the many different functions of the game at one time.
         </p>
         </div>
 
         <button class="accordion">Kionix Slot Car Demo</button>
         <div class="panel">
         <p>
+        I worked on writing software for a demo that Kionix now takes to many sensor expos to promote their project. We put a sensor on slot cars and took the data from the Kionix accelerometer (measures acceleration) and magnetomenter (measure magnetic flux) processed the data and displayed it on a user interface in order to create many real world applications of the Kionix sensors to show how functional and versatile they are. Some of the algorithms I worked on include but are not limited to the terrain detection algorithm and driver profiling. 
+        </p>
+        <p>
+        <b>Terrain Detection:</b> The idea was to have the car drive over some sort of 'rough' terrain to show the Kionix sensor can be used for vibration analysis in the high frequency domain. I used paper clips to emulate rough terrain. At first I thought this analysis would be simple, but because the sensor is so sensitive to changes in acceleration It was very difficult to see distinct changes in the acceleration patterns that could be hard coded without giving false positives. So I came up with al algorithm that fed in the most recent .5 seconds of data, and then calculated the average. After this the algorithm calculated how many distinct positive and negative peaks there were in all three axis of acceleration. I compared the data of how many peaks there were in the three axis just driving the car around and while driving it over paper clips to then deterime thresholds for number of peaks there should be to conider the terrain 'rough'. After refinement the algorithm had what seemed to be a 100% succsess rate. 
+      </p>
+      <p>
+      <b>Driver Profile:</b> The idea of this algoritm is to rate a driver based on how 'good' or safe the driver of the slot car is. We did this by taking in to account the cars peak accelerations, max g forces and average speed throughout a lap in order to assign the driver a profile score from 1 to 100 on how good of a driver they were. This could be used by insurance companies to help lower the rate for safe drivers or trucking/transportation companies to ensure their employees are driving safely.
         </p>
         </div>
+
+
         <button class="accordion">'INSTALERT' make-a-thon 2016 2nd place</button>
         <div class="panel">
         <p>
@@ -206,9 +224,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           We built an arduino project that used motion sensing data from a sensor to sent instant text alerts to your phone when activity is detected.
           The device also had the option of a blaring alarm to scare away small children.
           This idea was pitched as a child safety tool for medicine cabinets and gun cabinets but has a wide array of possible usage ranging from ensuring no one steals your money or the kids aren't taking chocolate and cookies too often. 
-
         </p>
         </div>
+
         <button class="accordion">Custom Paint Mixing make-a-thon 2019</button>
         <div class="panel">
         <p>
@@ -227,6 +245,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         Our project resulted in a final concept prototype. We worked extensivly with sensory information such as LIDAR, infrared, accelerometer, gyroscopes and physical product design to create a small scale manuevarable autonomous dust wiping bot.
         </p>
         </div>
+
+
         <button class="accordion">Self Driving Miniature Car</button>
         <div class="panel">
         <p>
