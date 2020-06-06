@@ -146,8 +146,26 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <b>Driver Profile:</b> The idea of this algoritm is to rate a driver based on how 'good' or safe the driver of the slot car is. We did this by taking in to account the cars peak accelerations, max g forces and average speed throughout a lap in order to assign the driver a profile score from 1 to 100 based on how good of a driver they were. This could be used by insurance companies to help lower the rate for safe drivers or trucking/transportation companies to ensure their employees are driving safely.
         </p>
         <br>
-        </div>
 
+        </div>
+        <button class="accordion">Autonomous Path Planning Simulation</button>
+        <div class="panel">
+        <p>
+          The goal of this project is to give a verbal command to an R2D2 replica robot and have it autonomously navigate there while avoiding objects. Due to COVID-19 our team had to transition to working online and we created simulations to test our grid representation and algorithm.
+      </p>
+      <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kCCVzjGvKVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </p>
+        <p>
+        <b>Grid Representation:</b> We first created custom classes to represent a grid with tiles. The overarching idea is to represent the robot as a single point, and then "bloat" all objects in the enviroment by treating all the tiles more than 1 robot radius away from the object as object tiles. 
+      </p>
+      <p>
+      <b>Simulation:</b> I created a simulation to help display and test the A* algorithm The simulation generates a random enviroment and then as the robot plans new paths the enviroment is filled in through pseudo sensor data. This sensor data is fed in to the simulation based on where the robot is, and the objects generated around that coordinate. 
+        </p>
+        <p>
+          <b>Liason:</b> I worked as the liason between the CS team and ECE team to help integrate LIDAR sensors, infrared sensors, ecoders and indoor ultrasonic GPS systems. 
+            </p>
+        <br>
+        </div>
         <button class="accordion">2017-2017 FTC Robotics: Control Award For Autonomous Design</button>
         <div class="panel">
         <h5><b>Autonomous Program</b></h5>
