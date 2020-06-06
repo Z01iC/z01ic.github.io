@@ -159,13 +159,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <b>Grid Representation:</b> We first created custom classes to represent a grid with tiles. The overarching idea is to represent the robot as a single point, and then "bloat" all objects in the enviroment by treating all the tiles more than 1 robot radius away from the object as object tiles. 
       </p>
       <p>
-      <b>Simulation:</b> I created a simulation to help display and test the A* algorithm The simulation generates a random enviroment and then as the robot plans new paths the enviroment is filled in through pseudo sensor data. This sensor data is fed in to the simulation based on where the robot is, and the objects generated around that coordinate. 
+      <b>Simulation:</b> I created a simulation to help display and test the A* algorithm The simulation generates a random enviroment and then as the robot plans new paths the enviroment is filled in through pseudo sensor data. This sensor data is fed in to the simulation based on where the robot is, and the objects generated around that coordinate. We also wrote code to smooth the paths of the robot to make them look more intelligent using the "line of sight" method
+        </p>
+        <p>
+          <img ALIGN="bottom" HSPACE="10" VSPACE="5"  src="Smoothed_Path.png" style = "width:75%">
         </p>
         <p>
           <b>Liason:</b> I worked as the liason between the CS team and ECE team to help integrate LIDAR sensors, infrared sensors, ecoders and indoor ultrasonic GPS systems. 
             </p>
         <br>
         </div>
+
         <button class="accordion">2017-2017 FTC Robotics: Control Award For Autonomous Design</button>
         <div class="panel">
         <h5><b>Autonomous Program</b></h5>
