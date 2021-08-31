@@ -152,26 +152,30 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <br>
         </div>
 
-        <button class="accordion">Autonomous Path Planning Simulation</button>
+        <button class="accordion">Autonomous Path Planning: Built from scratch</button>
         <div class="panel">
         <p>
-          The goal of this project is to give a verbal command to an R2D2 replica robot and have it autonomously navigate there while avoiding objects. Due to COVID-19 our team had to transition to working online and we created simulations to test our grid representation and algorithm.
+          The goal of this project is to give a verbal command to an R2D2 replica robot and have it 
+          autonomously navigate there while avoiding objects. Below you can see the simulation that we have built
         </p>
         <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Ap4Ibin4cLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>
-        <b>Grid Representation:</b> We first created custom classes to represent a grid with tiles. The overarching idea is to represent the robot as a single point, and then "bloat" all objects in the enviroment by treating all the tiles more than 1 robot radius away from the object as object tiles. 
+        <b>Grid Representation:</b> We first created custom classes to represent a grid with tiles. The overarching idea is to represent the robot as a single point, and then "bloat" all objects in the enviroment by treating all the tiles more than 1 robot radius away from the object as object tiles. In the video above the left screen represents the randomly generated enviroment, with the ran regions being obstacles, and the right side of the screen represents the enviroment from the robot's perspective. The orange tiles are obstacles, and the darker tiles are bloated tiles that the robot thinks may be obstacles, they more confident the robot is that the tile is an obstacle, the darker the color. As the robot navigates through the enviroment, pseudo sensor data is fed into the path planning system that allows the robot to fill in the enviroment and plan new paths. 
         </p>
         <p>
-        <b>Simulation:</b> I created a simulation to help display and test the A* algorithm The simulation generates a random enviroment and then as the robot plans new paths the enviroment is filled in through pseudo sensor data. This sensor data is fed in to the simulation based on where the robot is, and the objects generated around that coordinate. We also wrote code to smooth the paths of the robot to make them look more intelligent using the "line of sight" method
-
+          <b>Controls: In this simulation, we add a pseudo random amount of drift or error into the direction that the robot moves in order to test our controls algorithm. We have a PID controls algorithm that helps the robot correct for the error caused by not moving directly in a straight line.</b> 
+        </p>
+        <p>
         <b>Code:</b> To View our code visit the <a href="https://github.com/cornell-cup/C1C0_path_planning" target="_blank"> github page</a> 
-        </p>
-        <p>
         <img ALIGN="bottom" HSPACE="10" VSPACE="5"  src="Smoothed_Path.png" style = "width:75%">
         </p>
         <p>
-        <b>Liason:</b> I worked as the liason between the CS team and ECE team to help integrate LIDAR sensors, infrared sensors, ecoders and indoor ultrasonic GPS systems. 
+          On top of all of this 
+        </p>
+        <p>
+          <b>Offboarding computation: </b> We have built a server client communication network that allows the robot to communicate with a base-station computer on the same internet network. This means that all the computation and planning will be done by the basestatios. So the robot will simply collect sensor data, send it to the base station and recieve back commands to execute. This means that we can easily collect data for testing and also visualize what the robot thinks the enviroment is like from the base station.
+          <b>Technologies used: </b>Python, socket, tinkter Qt (GUI), Indoor ultrasonic GPS, LIDAR, Infrared, Encoders
         </p>
         <br>
         </div>
